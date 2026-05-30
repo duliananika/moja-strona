@@ -107,7 +107,7 @@ margin-top:40px;
 </style>
 </head>
 
-<body>
+
 
 <header>
 <h1>🌍 Kontynenty Świata</h1>
@@ -918,4 +918,19 @@ Azja jest największym kontynentem świata. Znajdują się tu najwyższe góry (
 </p>
 
 </div>
-  
+  <script>
+function pokaz(idKontynentu) {
+    // 1. Ukryj wszystkie sekcje z kontynentami
+    var sekcje = document.querySelectorAll('.sekcja');
+    sekcje.forEach(function(sekcja) {
+        sekcja.classList.remove('active');
+    });
+
+    // 2. Pokaż tylko tę sekcję, którą kliknięto
+    var wybranaSekcja = document.getElementById(idKontynentu);
+    if (wybranaSekcja) {
+        wybranaSekcja.classList.add('active');
+    }
+}
+</script>
+</body>
