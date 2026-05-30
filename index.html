@@ -1,127 +1,132 @@
+<body>
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kontynenty Świata - Anika</title>
+<h1 style="text-align:center;">Witaj na mojej stronie!</h1>
 
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+<h2 style="text-align:center;">Autor: Anika Dulian</h2>
+
+.miasto {
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #fff;
 }
 
-body{
-  background:#f5e1e7;
-  font-family:Georgia, serif;
-  color:#5a3d47;
+.miasto img {
+  width: 100%;
+  max-width: 500px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 10px;
 }
 
-/* HEADER */
-header{
-  background:linear-gradient(to right,#e8c7d0,#f8dfe5);
-  padding:60px 20px;
-  text-align:center;
-}
-
-header h1{
-  font-size:50px;
-  margin-bottom:10px;
-}
-
-header p{
-  font-size:20px;
-}
-
-/* NAV */
-nav{
-  background:#e0b9c5;
-  padding:15px;
-  text-align:center;
-  position:sticky;
-  top:0;
-}
-
-nav button{
-  background:white;
-  border:none;
-  padding:12px 18px;
-  margin:5px;
-  border-radius:30px;
-  cursor:pointer;
-  font-weight:bold;
-  color:#7a4f5c;
-}
-
-.sekcja{
-  display:none;
-  padding:40px;
-}
-
-.active{
-  display:block;
-}
-
-.karta{
-  background:white;
-  max-width:1000px;
-  margin:auto;
-  padding:30px;
-  border-radius:20px;
-}
-
-/* ===== MIASTA ===== */
-
-h1.miasta-title{
-  margin-top:30px;
-  font-size:32px;
-}
-
-.miasto{
-  margin-top:25px;
-  padding:15px;
-  background:white;
-  border-radius:12px;
-}
-
-/* 🔥 KLUCZ: 50% szerokości ekranu */
-.miasto img{
-  width:50vw;
-  max-width:600px;
-  height:250px;
-  object-fit:cover;
-  border-radius:12px;
-  margin-top:10px;
-  display:block;
-}
-
-.ciekawostka{
-  margin-top:10px;
-  padding:12px;
-  background:#ffb6d5;
-  border-radius:12px;
-  font-weight:bold;
-}
-
-/* EUROPA INFO BOX */
-.info{
-  background:#f8dfe5;
-  padding:15px;
-  border-radius:12px;
-  margin-top:10px;
-}
-
-footer{
-  background:#d7a8b6;
-  color:white;
-  text-align:center;
-  padding:20px;
-  margin-top:40px;
+.ciekawostka {
+  margin-top: 10px;
+  padding: 10px;
+  background: #ffb6d5;
+  border-radius: 12px;
+  font-weight: bold;
 }
 </style>
 
+</head>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#f5e1e7;
+font-family:Georgia, serif;
+color:#5a3d47;
+}
+
+header{
+background:linear-gradient(to right,#e8c7d0,#f8dfe5);
+padding:60px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:20px;
+}
+
+nav{
+background:#e0b9c5;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+}
+
+nav button{
+background:white;
+border:none;
+padding:12px 18px;
+margin:5px;
+border-radius:30px;
+cursor:pointer;
+font-weight:bold;
+color:#7a4f5c;
+transition:0.3s;
+}
+
+nav button:hover{
+background:#c98fa0;
+color:white;
+}
+
+.sekcja{
+display:none;
+padding:40px;
+}
+
+.active{
+display:block;
+}
+
+.karta{
+background:white;
+max-width:1000px;
+margin:auto;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.karta h2{
+margin-bottom:20px;
+font-size:35px;
+}
+
+.ciekawostka{
+background:#f8dfe5;
+padding:20px;
+margin-top:20px;
+border-radius:15px;
+}
+
+footer{
+background:#d7a8b6;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
 </head>
 
 <body>
@@ -133,90 +138,117 @@ footer{
 
 <nav>
 <button onclick="pokaz('europa')">Europa</button>
+<button onclick="pokaz('azja')">Azja</button>
+<button onclick="pokaz('afryka')">Afryka</button>
+<button onclick="pokaz('ameryka1')">Ameryka Płn.</button>
+<button onclick="pokaz('ameryka2')">Ameryka Płd.</button>
+<button onclick="pokaz('australia')">Australia</button>
+<button onclick="pokaz('antarktyda')">Antarktyda</button>
 </nav>
 
-<!-- EUROPA -->
 <div id="europa" class="sekcja active">
-
 <div class="karta">
-
 <h2>🏰 Europa</h2>
+<p>👥 Ludność: ok. 740 mln </p>
+<p>📍 Powierzchnia: ok. 10,2 mln km² </p>
+<p> 🏳️ Kraje: ok. 44 </p>
+<p> 🌎 Położenie: półkula północna i wschodnia</p>
+<p> 🧭 Granice: Azja (Eurazja), Ocean Atlantycki, Morze Arktyczne </p>
+<p>🏔️ Ukształtowanie terenu: góry (Alpy), niziny, wyżyny</p>
+<p> 🌦️ Klimat: umiarkowany, śródziemnomorski, chłodny na północy </p>
+<div class="ciekawostka">
 
-<div class="info">
-<p>👥 Ludność: ok. 740 mln</p>
-<p>📍 Powierzchnia: ok. 10,2 mln km²</p>
-<p>🏳️ Kraje: ok. 44</p>
-<p>🌎 Położenie: półkula północna i wschodnia</p>
+  <h1 style="margin-top:30px; font-size:32px;">
+      🌍 Najważniejsze miasta Europy
+    </h1>
+
+    <!-- LONDYN -->
+    <div class="miasto">
+      <h2>🇬🇧 Londyn</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/London_Eye_Twilight_April_2006.jpg">
+      <p>⭐ Big Ben, Tower Bridge, London Eye</p>
+
+      <div class="ciekawostka">
+        ⭐ Londyn jest jednym z najstarszych i największych miast Europy.
+      </div>
+    </div>
+
+    <!-- PARYŻ -->
+    <div class="miasto">
+      <h2>🇫🇷 Paryż</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg">
+      <p>⭐ Wieża Eiffla, Luwr, Katedra Notre-Dame</p>
+
+      <div class="ciekawostka">
+        ⭐ Paryż nazywany jest „Miastem Światła”.
+      </div>
+    </div>
+
+    <!-- BERLIN -->
+    <div class="miasto">
+      <h2>🇩🇪 Berlin</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Berlin_Skyline.jpg">
+      <p>⭐ Brama Brandenburska, Reichstag, Mur Berliński</p>
+
+      <div class="ciekawostka">
+        ⭐ Berlin ma ponad 170 muzeów!
+      </div>
+    </div>
+
+    <!-- WARSZAWA -->
+    <div class="miasto">
+      <h2>🇵🇱 Warszawa</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Warsaw_skyline.jpg">
+      <p>⭐ Stare Miasto, Pałac Kultury, Łazienki</p>
+
+      <div class="ciekawostka">
+        ⭐ Warszawa została prawie całkowicie odbudowana po II wojnie światowej.
+      </div>
+    </div>
+
+    <!-- WIEDEŃ -->
+    <div class="miasto">
+      <h2>🇦🇹 Wiedeń</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Vienna_Skyline.jpg">
+      <p>⭐ Pałac Schönbrunn, Opera Wiedeńska</p>
+
+      <div class="ciekawostka">
+        ⭐ Wiedeń jest uznawany za światową stolicę muzyki klasycznej.
+      </div>
+    </div>
+
+    <!-- MADRYT -->
+    <div class="miasto">
+      <h2>🇪🇸 Madryt</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Madrid_skyline.jpg">
+      <p>⭐ Pałac Królewski, Prado, Plaza Mayor</p>
+
+      <div class="ciekawostka">
+        ⭐ Madryt jest najwyżej położoną stolicą Europy.
+      </div>
+    </div>
+
+    <!-- ATENY -->
+    <div class="miasto">
+      <h2>🇬🇷 Ateny</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Acropolis_Athens.jpg">
+      <p>⭐ Akropol, Partenon</p>
+
+      <div class="ciekawostka">
+        ⭐ Ateny są kolebką demokracji.
+      </div>
+    </div>
+
+    <!-- PRAGA -->
+    <div class="miasto">
+      <h2>🇨🇿 Praga</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Prague_Castle.jpg">
+      <p>⭐ Most Karola, Zamek Praski</p>
+
+      <div class="ciekawostka">
+        ⭐ Praga nazywana jest „miastem stu wież”.
+      </div>
+    </div>
+
+  </div>
 </div>
-
-<h1 class="miasta-title">🌍 Najważniejsze miasta Europy</h1>
-
-<!-- LONDYN -->
-<div class="miasto">
-<h2>🇬🇧 Londyn</h2>
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/London_Eye_Twilight_April_2006.jpg">
-<p>⭐ Big Ben, Tower Bridge, London Eye</p>
-<div class="ciekawostka">⭐ Londyn to jedno z największych miast Europy.</div>
-</div>
-
-<!-- PARYŻ -->
-<div class="miasto">
-<h2>🇫🇷 Paryż</h2>
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg">
-<p>⭐ Wieża Eiffla, Luwr, Notre-Dame</p>
-<div class="ciekawostka">⭐ Paryż = Miasto Światła.</div>
-</div>
-
-<!-- BERLIN -->
-<div class="miasto">
-<h2>🇩🇪 Berlin</h2>
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Berlin_Skyline.jpg">
-<p>⭐ Brama Brandenburska, Reichstag</p>
-<div class="ciekawostka">⭐ Berlin ma ponad 170 muzeów.</div>
-</div>
-
-<!-- WARSZAWA -->
-<div class="miasto">
-<h2>🇵🇱 Warszawa</h2>
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Warsaw_skyline.jpg">
-<p>⭐ Stare Miasto, Łazienki</p>
-<div class="ciekawostka">⭐ Warszawa została odbudowana po wojnie.</div>
-</div>
-
-<!-- WIEDEŃ -->
-<div class="miasto">
-<h2>🇦🇹 Wiedeń</h2>
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Vienna_Skyline.jpg">
-<p>⭐ Schönbrunn, Opera</p>
-<div class="ciekawostka">⭐ Stolica muzyki klasycznej.</div>
-</div>
-
-<!-- MADRYT -->
-<div class="miasto">
-<h2>🇪🇸 Madryt</h2>
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Madrid_skyline.jpg">
-<p>⭐ Pałac Królewski, Prado</p>
-<div class="ciekawostka">⭐ Wysoko położona stolica Europy.</div>
-</div>
-
-<!-- ATENY -->
-<div class="miasto">
-<h2>🇬🇷 Ateny</h2>
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Acropolis_Athens.jpg">
-<p>⭐ Akropol</p>
-<div class="ciekawostka">⭐ Kolebka demokracji.</div>
-</div>
-
-<!-- PRAGA -->
-<div class="miasto">
-<h2>🇨🇿 Praga</h2>
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Prague_Castle.jpg">
-<p>⭐ Most Karola</p>
-<div class="ciekawostka">⭐ Miasto stu wież.</div>
-</div>
-
-</div>
-</div>
-
-</body>
-</html>
