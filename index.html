@@ -1,259 +1,255 @@
+<body>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontynenty świata</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontynenty Świata - Anika</title>
+<h1 style="text-align:center;">Witaj na mojej stronie!</h1>
+
+<h2 style="text-align:center;">Autor: Anika Dulian</h2>
+
+/* OGÓLNA PRZERWA MIĘDZY MIASTAMI */
+.miasto {
+  margin-top: 25px;
+}
+
+/* 🔥 LONDYN BEZ RÓŻOWEGO TŁA */
+.londyn {
+  background: #ffffff;
+  border: 2px solid #e0b9c5;
+}
+
+/* 🔥 NAGŁÓWEK LONDYNU */
+.londyn h2 {
+  font-size: 34px;
+  color: #5a3d47;
+  margin-bottom: 10px;
+}
+
+/* 🔥 CIEKAWOSTKA TYLKO DLA LONDYNU */
+.londyn-info {
+  background: #f2f2f2;   /* nie różowe */
+  border-left: 5px solid #e0b9c5;
+</style>
+
+</head>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#f5e1e7;
+font-family:Georgia, serif;
+color:#5a3d47;
+}
+
+header{
+background:linear-gradient(to right,#e8c7d0,#f8dfe5);
+padding:60px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:20px;
+}
+
+nav{
+background:#e0b9c5;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+}
+
+nav button{
+background:white;
+border:none;
+padding:12px 18px;
+margin:5px;
+border-radius:30px;
+cursor:pointer;
+font-weight:bold;
+color:#7a4f5c;
+transition:0.3s;
+}
+
+nav button:hover{
+background:#c98fa0;
+color:white;
+}
+
+.sekcja{
+display:none;
+padding:40px;
+}
+
+.active{
+display:block;
+}
+
+.karta{
+background:white;
+max-width:1000px;
+margin:auto;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.karta h2{
+margin-bottom:20px;
+font-size:35px;
+}
+
+.ciekawostka{
+background:#f8dfe5;
+padding:20px;
+margin-top:20px;
+border-radius:15px;
+}
+
+footer{
+background:#d7a8b6;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <h1>Witaj na mojej stronie</h1>
-    <p>Podróż po kontynentach świata 🌍</p>
+<h1>🌍 Kontynenty Świata</h1>
+<p>Poznaj najciekawsze miejsca naszej planety</p>
 </header>
 
-<h1 class="main-title">KONTYNENTY ŚWIATA</h1>
-<p class="subtitle">Odkryj każdy zakątek naszej planety</p>
+<nav>
+<button onclick="pokaz('europa')">Europa</button>
+<button onclick="pokaz('azja')">Azja</button>
+<button onclick="pokaz('afryka')">Afryka</button>
+<button onclick="pokaz('ameryka1')">Ameryka Płn.</button>
+<button onclick="pokaz('ameryka2')">Ameryka Płd.</button>
+<button onclick="pokaz('australia')">Australia</button>
+<button onclick="pokaz('antarktyda')">Antarktyda</button>
+</nav>
 
-<div class="container">
+<div id="europa" class="sekcja active">
+<div class="karta">
+<h2>🏰 Europa</h2>
+<p>👥 Ludność: ok. 740 mln </p>
+<p>📍 Powierzchnia: ok. 10,2 mln km² </p>
+<p> 🏳️ Kraje: ok. 44 </p>
+<p> 🌎 Położenie: półkula północna i wschodnia</p>
+<p> 🧭 Granice: Azja (Eurazja), Ocean Atlantycki, Morze Arktyczne </p>
+<p>🏔️ Ukształtowanie terenu: góry (Alpy), niziny, wyżyny</p>
+<p> 🌦️ Klimat: umiarkowany, śródziemnomorski, chłodny na północy </p>
+<div class="ciekawostka">
 
-    <a href="#europa" class="card">Europa</a>
-    <a href="#azja" class="card">Azja</a>
-    <a href="#afryka" class="card">Afryka</a>
-    <a href="#ameryka-polnocna" class="card">Ameryka Północna</a>
-    <a href="#ameryka-poludniowa" class="card">Ameryka Południowa</a>
-    <a href="#australia" class="card">Australia i Oceania</a>
+  <h1 style="text-align:center; font-size:50px;">
+  Najważniejsze miasta Europy
+</h1>
 
+    <!-- LONDYN -->
+    <div class="miasto londyn">
+  <h2>🇬🇧 Londyn</h2>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/London_Eye_Twilight_April_2006.jpg">
+
+  <p>⭐ Big Ben, Tower Bridge, London Eye</p>
+
+  <div class="ciekawostka londyn-info">
+    ⭐ Londyn to jedno z najważniejszych miast Europy.
+  </div>
 </div>
 
-<!-- SEKCJE -->
-<div class="section" id="europa">
-    <h2>Europa</h2>
-    <p>Tutaj możesz opisać Europę...</p>
+    <!-- PARYŻ -->
+    <div class="miasto">
+      <h2>🇫🇷 Paryż</h2>
+      <img src="src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg"" width="450" height="260">
+      <p>⭐ Wieża Eiffla, Luwr, Katedra Notre-Dame</p>
+
+      <div class="ciekawostka">
+        ⭐ Paryż nazywany jest „Miastem Światła”.
+      </div>
+    </div>
+
+    <!-- BERLIN -->
+    <div class="miasto">
+      <h2>🇩🇪 Berlin</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Berlin_Skyline.jpg">
+      <p>⭐ Brama Brandenburska, Reichstag, Mur Berliński</p>
+
+      <div class="ciekawostka">
+        ⭐ Berlin ma ponad 170 muzeów!
+      </div>
+    </div>
+
+    <!-- WARSZAWA -->
+    <div class="miasto">
+      <h2>🇵🇱 Warszawa</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Warsaw_skyline.jpg">
+      <p>⭐ Stare Miasto, Pałac Kultury, Łazienki</p>
+
+      <div class="ciekawostka">
+        ⭐ Warszawa została prawie całkowicie odbudowana po II wojnie światowej.
+      </div>
+    </div>
+
+    <!-- WIEDEŃ -->
+    <div class="miasto">
+      <h2>🇦🇹 Wiedeń</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Vienna_Skyline.jpg">
+      <p>⭐ Pałac Schönbrunn, Opera Wiedeńska</p>
+
+      <div class="ciekawostka">
+        ⭐ Wiedeń jest uznawany za światową stolicę muzyki klasycznej.
+      </div>
+    </div>
+
+    <!-- MADRYT -->
+    <div class="miasto">
+      <h2>🇪🇸 Madryt</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Madrid_skyline.jpg">
+      <p>⭐ Pałac Królewski, Prado, Plaza Mayor</p>
+
+      <div class="ciekawostka">
+        ⭐ Madryt jest najwyżej położoną stolicą Europy.
+      </div>
+    </div>
+
+    <!-- ATENY -->
+    <div class="miasto">
+      <h2>🇬🇷 Ateny</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Acropolis_Athens.jpg">
+      <p>⭐ Akropol, Partenon</p>
+
+      <div class="ciekawostka">
+        ⭐ Ateny są kolebką demokracji.
+      </div>
+    </div>
+
+    <!-- PRAGA -->
+    <div class="miasto">
+      <h2>🇨🇿 Praga</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Prague_Castle.jpg">
+      <p>⭐ Most Karola, Zamek Praski</p>
+
+      <div class="ciekawostka">
+        ⭐ Praga nazywana jest „miastem stu wież”.
+      </div>
+    </div>
+
+  </div>
 </div>
-
-<div class="section" id="azja">
-    <h2>Azja</h2>
-    <p>Tutaj możesz opisać Azję...</p>
-</div>
-
-<div class="section" id="afryka">
-    <h2>Afryka</h2>
-    <p>Tutaj możesz opisać Afrykę...</p>
-</div>
-
-<div class="section" id="ameryka-polnocna">
-    <h2>Ameryka Północna</h2>
-    <p>Tutaj możesz opisać Amerykę Północną...</p>
-</div>
-
-<div class="section" id="ameryka-poludniowa">
-    <h2>Ameryka Południowa</h2>
-    <p>Tutaj możesz opisać Amerykę Południową...</p>
-</div>
-
-<div class="section" id="australia">
-    <h2>Australia i Oceania</h2>
-    <p>Tutaj możesz opisać Australię i Oceanię...</p>
-</div>
-
-<footer>
-    <p>Strona stworzona przez Ciebie 💗</p>
-</footer>
-
-</body>
-</html>
-
-body {
-    font-family: "Times New Roman", serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f7e6ea;
-    color: #3a2b2f;
-}
-
-header {
-    text-align: center;
-    padding: 30px;
-    background: #f3c6d2;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 32px;
-}
-
-header p {
-    margin: 5px;
-    font-size: 18px;
-}
-
-.main-title {
-    text-align: center;
-    font-size: 50px;
-    margin-top: 30px;
-    letter-spacing: 2px;
-}
-
-.subtitle {
-    text-align: center;
-    font-size: 22px;
-    margin-bottom: 40px;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
-.card {
-    width: 220px;
-    height: 140px;
-    background: #f4b6c2;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    transition: 0.3s;
-    text-decoration: none;
-    color: black;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    background: #f08aa0;
-}
-
-.section {
-    padding: 30px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-h2 {
-    font-size: 28px;
-    border-bottom: 2px solid #d98aa0;
-    padding-bottom: 5px;
-}
-
-h3 {
-    margin-top: 20px;
-}
-
-ul {
-    line-height: 1.6;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #f3c6d2;
-    margin-top: 40px;
-}
-
-</header>
-
-<h1 class="main-title">Kontynenty Świata</h1>
-<p class="subtitle">Poznaj najciekawsze miejsca naszej planety</p>
-
-<div class="container">
-    <a class="card" href="europa.html">Europa 🇪🇺</a>
-    <a class="card" href="azja.html">Azja 🌏</a>
-    <a class="card" href="afryka.html">Afryka 🌍</a>
-    <a class="card" href="ameryka-polnocna.html">Ameryka Płn. 🌎</a>
-    <a class="card" href="ameryka-poludniowa.html">Ameryka Płd. 🌎</a>
-    <a class="card" href="australia.html">Australia 🇦🇺</a>
-    <a class="card" href="antarktyda.html">Antarktyda ❄️</a>
-</div>
-
-<footer>
-    © Kontynenty Świata
-</footer>
-
-</body>
-</html>
-
-li>Ludność: ~3,3 mln</li>
-<li>Atrakcje: Pałac Królewski, Prado</li>
-</ul>
-
-<h3>Warszawa 🇵🇱</h3>
-<ul>
-<li>Ludność: ~1,8 mln</li>
-<li>Atrakcje: Stare Miasto, Łazienki</li>
-</ul>
-
-<h3>Amsterdam 🇳🇱</h3>
-<ul>
-<li>Ludność: ~900 tys.</li>
-<li>Atrakcje: kanały, muzea</li>
-</ul>
-
-<h3>Praga 🇨🇿</h3>
-<ul>
-<li>Ludność: ~1,3 mln</li>
-<li>Atrakcje: Most Karola, Zamek Praski</li>
-</ul>
-
-<h2>Historia</h2>
-<ul>
-<li>Starożytność – Grecja i Rzym</li>
-<li>Średniowiecze – feudalizm</li>
-<li>Nowożytność – odkrycia geograficzne</li>
-</ul>
-
-<h2>Kultura</h2>
-<ul>
-<li>różnorodność języków</li>
-<li>sztuka, muzyka, literatura</li>
-</ul>
-
-<h2>Religie</h2>
-<ul>
-<li>chrześcijaństwo (dominujące)</li>
-<li>islam</li>
-<li>inne religie</li>
-</ul>
-
-<h2>Polityka</h2>
-<ul>
-<li>Unia Europejska</li>
-<li>demokracje parlamentarne</li>
-</ul>
-
-<h2>Gospodarka</h2>
-<ul>
-<li>przemysł</li>
-<li>usługi</li>
-<li>technologia</li>
-</ul>
-
-<h2>Turystyka</h2>
-<ul>
-<li>bardzo rozwinięta</li>
-<li>historyczne miasta</li>
-</ul>
-
-<h2>Geografia</h2>
-<ul>
-<li>Alpy, Pireneje</li>
-<li>Wisła, Dunaj</li>
-<li>Morze Bałtyckie, Śródziemne</li>
-</ul>
-
-</div>
-
-<footer>
-    <a href="index.html">← powrót</a>
-</footer>
-
-</body>
-</html>
