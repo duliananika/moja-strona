@@ -132,7 +132,380 @@ margin-top:40px;
 <p>🏔️ Ukształtowanie terenu: góry (Alpy), niziny, wyżyny</p>
 <p> 🌦️ Klimat: umiarkowany, śródziemnomorski, chłodny na północy </p>
 <div class="ciekawostka">
-⭐ Ciekawostka: Tutaj wpisz ciekawostkę o Europie.
+
+ <!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Najważniejsze Miasta Europy</title>
+
+<style>
+body{
+font-family:Georgia, serif;
+background:#f5e1e7;
+margin:0;
+color:#5a3d47;
+}
+
+header{
+text-align:center;
+padding:50px;
+background:linear-gradient(to right,#f3cbd6,#f8e1e7);
+}
+
+header h1{
+font-size:55px;
+}
+
+nav{
+text-align:center;
+background:#e6b7c6;
+padding:15px;
+position:sticky;
+top:0;
+}
+
+nav button{
+margin:5px;
+padding:10px 15px;
+border:none;
+border-radius:20px;
+background:white;
+cursor:pointer;
+font-weight:bold;
+color:#6a3b4a;
+}
+
+nav button:hover{
+background:#d88aa0;
+color:white;
+}
+
+.miasto{
+display:none;
+padding:40px;
+}
+
+.active{
+display:block;
+}
+
+.karta{
+max-width:900px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+h2{
+text-align:center;
+font-size:40px;
+}
+
+img{
+width:100%;
+border-radius:15px;
+margin-top:15px;
+}
+
+.sekcja{
+margin-top:15px;
+padding:10px;
+background:#f8e1e7;
+border-radius:10px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#d99ab0;
+color:white;
+margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🏙️ NAJWAŻNIEJSZE MIASTA EUROPY</h1>
+<p>kliknij miasto aby zobaczyć informacje</p>
+</header>
+
+<nav>
+<button onclick="show('londyn')">Londyn</button>
+<button onclick="show('paryz')">Paryż</button>
+<button onclick="show('berlin')">Berlin</button>
+<button onclick="show('rzym')">Rzym</button>
+<button onclick="show('warszawa')">Warszawa</button>
+<button onclick="show('madryt')">Madryt</button>
+<button onclick="show('amsterdam')">Amsterdam</button>
+<button onclick="show('wieden')">Wiedeń</button>
+<button onclick="show('praga')">Praga</button>
+<button onclick="show('ateny')">Ateny</button>
+</nav>
+
+<!-- LONDYN -->
+<div id="londyn" class="miasto active">
+<div class="karta">
+<h2>🇬🇧 Londyn</h2>
+
+<div class="sekcja">
+<strong>Podstawowe informacje:</strong><br>
+Stolica Wielkiej Brytanii, jedno z największych miast Europy.
+</div>
+
+<div class="sekcja">
+<strong>Ciekawe rzeczy:</strong><br>
+Big Ben, czerwone autobusy, metro Underground.
+</div>
+
+<div class="sekcja">
+<strong>Atrakcje:</strong><br>
+London Eye, Tower Bridge, Pałac Buckingham.
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/London_Montage_L.jpg">
+</div>
+</div>
+
+<!-- PARYŻ -->
+<div id="paryz" class="miasto">
+<div class="karta">
+<h2>🇫🇷 Paryż</h2>
+
+<div class="sekcja">
+<strong>Podstawowe informacje:</strong><br>
+Stolica Francji, miasto mody i miłości.
+</div>
+
+<div class="sekcja">
+<strong>Ciekawe rzeczy:</strong><br>
+Wieża Eiffla, croissanty, Luwr.
+</div>
+
+<div class="sekcja">
+<strong>Atrakcje:</strong><br>
+Wieża Eiffla, Katedra Notre-Dame, Pola Elizejskie.
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Paris_Montage.jpg">
+</div>
+</div>
+
+<!-- BERLIN -->
+<div id="berlin" class="miasto">
+<div class="karta">
+<h2>🇩🇪 Berlin</h2>
+
+<div class="sekcja">
+<strong>Podstawowe informacje:</strong><br>
+Stolica Niemiec, centrum polityczne i kulturalne.
+</div>
+
+<div class="sekcja">
+<strong>Ciekawe rzeczy:</strong><br>
+Mur Berliński, Brama Brandenburska.
+</div>
+
+<div class="sekcja">
+<strong>Atrakcje:</strong><br>
+Reichstag, Alexanderplatz.
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Berlin_Skyline.jpg">
+</div>
+</div>
+
+<!-- RZYM -->
+<div id="rzym" class="miasto">
+<div class="karta">
+<h2>🇮🇹 Rzym</h2>
+
+<div class="sekcja">
+<strong>Podstawowe informacje:</strong><br>
+Stolica Włoch, miasto starożytnego Imperium Rzymskiego.
+</div>
+
+<div class="sekcja">
+<strong>Ciekawe rzeczy:</strong><br>
+Koloseum, pizza, fontanna di Trevi.
+</div>
+
+<div class="sekcja">
+<strong>Atrakcje:</strong><br>
+Koloseum, Watykan, Panteon.
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Rome_Montage_2017.png">
+</div>
+</div>
+
+<!-- WARSZAWA -->
+<div id="warszawa" class="miasto">
+<div class="karta">
+<h2>🇵🇱 Warszawa</h2>
+
+<div class="sekcja">
+<strong>Podstawowe informacje:</strong><br>
+Stolica Polski, największe miasto kraju.
+</div>
+
+<div class="sekcja">
+<strong>Ciekawe rzeczy:</strong><br>
+Stare Miasto, Pałac Kultury.
+</div>
+
+<div class="sekcja">
+<strong>Atrakcje:</strong><br>
+Łazienki Królewskie, Zamek Królewski.
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Warsaw_Montage.jpg">
+</div>
+</div>
+
+<!-- MADRYT -->
+<div id="madryt" class="miasto">
+<div class="karta">
+<h2>🇪🇸 Madryt</h2>
+
+<div class="sekcja">
+<strong>Podstawowe informacje:</strong><br>
+Stolica Hiszpanii, gorące i tętniące życiem miasto.
+</div>
+
+<div class="sekcja">
+<strong>Ciekawe rzeczy:</strong><br>
+Flamenco, Real Madrid.
+</div>
+
+<div class="sekcja">
+<strong>Atrakcje:</strong><br>
+Pałac Królewski, Plaza Mayor.
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Madrid_Montage.jpg">
+</div>
+</div>
+
+<!-- AMSTERDAM -->
+<div id="amsterdam" class="miasto">
+<div class="karta">
+<h2>🇳🇱 Amsterdam</h2>
+
+<div class="sekcja">
+<strong>Podstawowe informacje:</strong><br>
+Miasto kanałów i rowerów.
+</div>
+
+<div class="sekcja">
+<strong>Ciekawe rzeczy:</strong><br>
+Kanały, tulipany.
+</div>
+
+<div class="sekcja">
+<strong>Atrakcje:</strong><br>
+Muzeum Van Gogha, Dom Anny Frank.
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Amsterdam_Canal.jpg">
+</div>
+</div>
+
+<!-- WIEDEŃ -->
+<div id="wieden" class="miasto">
+<div class="karta">
+<h2>🇦🇹 Wiedeń</h2>
+
+<div class="sekcja">
+<strong>Podstawowe informacje:</strong><br>
+Stolica Austrii, miasto muzyki.
+</div>
+
+<div class="sekcja">
+<strong>Ciekawe rzeczy:</strong><br>
+Mozart, walce.
+</div>
+
+<div class="sekcja">
+<strong>Atrakcje:</strong><br>
+Pałac Schönbrunn.
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Vienna_Montage.jpg">
+</div>
+</div>
+
+<!-- PRAGA -->
+<div id="praga" class="miasto">
+<div class="karta">
+<h2>🇨🇿 Praga</h2>
+
+<div class="sekcja">
+<strong>Podstawowe informacje:</strong><br>
+Jedno z najpiękniejszych miast Europy.
+</div>
+
+<div class="sekcja">
+<strong>Ciekawe rzeczy:</strong><br>
+Most Karola.
+</div>
+
+<div class="sekcja">
+<strong>Atrakcje:</strong><br>
+Zamek Praski.
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Prague_Montage.jpg">
+</div>
+</div>
+
+<!-- ATENY -->
+<div id="ateny" class="miasto">
+<div class="karta">
+<h2>🇬🇷 Ateny</h2>
+
+<div class="sekcja">
+<strong>Podstawowe informacje:</strong><br>
+Kolebka demokracji.
+</div>
+
+<div class="sekcja">
+<strong>Ciekawe rzeczy:</strong><br>
+Akropol.
+</div>
+
+<div class="sekcja">
+<strong>Atrakcje:</strong><br>
+Partenon.
+</div>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Athens_Montage_L.jpg">
+</div>
+</div>
+
+<footer>
+Autor: Anika © 2026 🌍
+</footer>
+
+<script>
+function show(id){
+let all=document.querySelectorAll('.miasto');
+all.forEach(x=>x.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html> 
+  
+  
+  
+  ⭐ Ciekawostka: Tutaj wpisz ciekawostkę o Europie.
 </div>
 </div>
 </div>
