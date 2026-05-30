@@ -1,5 +1,218 @@
 <body>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontynenty Świata - Anika</title>
 
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#f5e1e7;
+font-family:Georgia, serif;
+color:#5a3d47;
+}
+
+header{
+background:linear-gradient(to right,#e8c7d0,#f8dfe5);
+padding:60px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+header p{
+font-size:20px;
+}
+
+nav{
+background:#e0b9c5;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+}
+
+nav button{
+background:white;
+border:none;
+padding:12px 18px;
+margin:5px;
+border-radius:30px;
+cursor:pointer;
+font-weight:bold;
+color:#7a4f5c;
+transition:0.3s;
+}
+
+nav button:hover{
+background:#c98fa0;
+color:white;
+}
+
+.sekcja{
+display:none;
+padding:40px;
+}
+
+.active{
+display:block;
+}
+
+.karta{
+background:white;
+max-width:1000px;
+margin:auto;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.karta h2{
+margin-bottom:20px;
+font-size:35px;
+}
+
+.ciekawostka{
+background:#f8dfe5;
+padding:20px;
+margin-top:20px;
+border-radius:15px;
+}
+
+footer{
+background:#d7a8b6;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌍 Kontynenty Świata</h1>
+<p>Poznaj najciekawsze miejsca naszej planety</p>
+</header>
+
+<nav>
+<button onclick="pokaz('europa')">Europa</button>
+<button onclick="pokaz('azja')">Azja</button>
+<button onclick="pokaz('afryka')">Afryka</button>
+<button onclick="pokaz('ameryka1')">Ameryka Płn.</button>
+<button onclick="pokaz('ameryka2')">Ameryka Płd.</button>
+<button onclick="pokaz('australia')">Australia</button>
+<button onclick="pokaz('antarktyda')">Antarktyda</button>
+</nav>
+
+<div id="europa" class="sekcja active">
+<div class="karta">
+<h2>🇪🇺 Europa</h2>
+<p>Tutaj wpisz informacje o Europie.</p>
+
+<div class="ciekawostka">
+⭐ Ciekawostka: Tutaj wpisz ciekawostkę o Europie.
+</div>
+</div>
+</div>
+
+<div id="azja" class="sekcja">
+<div class="karta">
+<h2>🌏 Azja</h2>
+<p>Tutaj wpisz informacje o Azji.</p>
+
+<div class="ciekawostka">
+⭐ Ciekawostka: Tutaj wpisz ciekawostkę o Azji.
+</div>
+</div>
+</div>
+
+<div id="afryka" class="sekcja">
+<div class="karta">
+<h2>🌍 Afryka</h2>
+<p>Tutaj wpisz informacje o Afryce.</p>
+
+<div class="ciekawostka">
+⭐ Ciekawostka: Tutaj wpisz ciekawostkę o Afryce.
+</div>
+</div>
+</div>
+
+<div id="ameryka1" class="sekcja">
+<div class="karta">
+<h2>🍁 Ameryka Północna</h2>
+<p>Tutaj wpisz informacje o Ameryce Północnej.</p>
+
+<div class="ciekawostka">
+⭐ Ciekawostka: Tutaj wpisz ciekawostkę o Ameryce Północnej.
+</div>
+</div>
+</div>
+
+<div id="ameryka2" class="sekcja">
+<div class="karta">
+<h2>🌴 Ameryka Południowa</h2>
+<p>Tutaj wpisz informacje o Ameryce Południowej.</p>
+
+<div class="ciekawostka">
+⭐ Ciekawostka: Tutaj wpisz ciekawostkę o Ameryce Południowej.
+</div>
+</div>
+</div>
+
+<div id="australia" class="sekcja">
+<div class="karta">
+<h2>🦘 Australia i Oceania</h2>
+<p>Tutaj wpisz informacje o Australii i Oceanii.</p>
+
+<div class="ciekawostka">
+⭐ Ciekawostka: Tutaj wpisz ciekawostkę o Australii.
+</div>
+</div>
+</div>
+
+<div id="antarktyda" class="sekcja">
+<div class="karta">
+<h2>❄️ Antarktyda</h2>
+<p>Tutaj wpisz informacje o Antarktydzie.</p>
+
+<div class="ciekawostka">
+⭐ Ciekawostka: Tutaj wpisz ciekawostkę o Antarktydzie.
+</div>
+</div>
+</div>
+
+<footer>
+Autor: Anika © 2026
+</footer>
+
+<script>
+function pokaz(id){
+
+let sekcje=document.querySelectorAll('.sekcja');
+
+sekcje.forEach(function(sekcja){
+sekcja.classList.remove('active');
+});
+
+document.getElementById(id).classList.add('active');
+
+}
+</script>
+
+</body>
+</html>
 <h1>Witaj na mojej stronie!</h1>
 
 <p>To moja pierwsza strona internetowa.</p>
