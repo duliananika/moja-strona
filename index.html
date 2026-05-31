@@ -888,88 +888,6 @@ function pokaz(idKontynentu) {
         }
     </style>
 </head>
-<body>
-
-<header>
-    <h1>🌍 Kontynenty Świata</h1>
-    <p>Poznaj najciekawsze miejsca naszej planety</p>
-    <h3 style="margin-top: 10px; font-weight: normal;">Autor: Anika Dulian</h3>
-</header>
-
-<nav>
-    <a href="#" onclick="pokaz('europa'); return false;">Europa</a>
-    <a href="#" onclick="pokaz('azja'); return false;">Azja</a>
-    <a href="#" onclick="pokaz('afryka'); return false;">Afryka</a>
-    <a href="#" onclick="pokaz('ameryka1'); return false;">Ameryka Płn.</a>
-    <a href="#" onclick="pokaz('ameryka2'); return false;">Ameryka Płd.</a>
-    <a href="#" onclick="pokaz('australia'); return false;">Australia</a>
-    <a href="#" onclick="pokaz('antarktyda'); return false;">Antarktyda</a>
-</nav>
-
-<!-- ==================== EUROPA (Twój oryginalny kod) ==================== -->
-<div id="europa" class="sekcja active">
-    <div class="karta">
-        <h2>🏰 Europa</h2>
-        <p>👥 Ludność: ok. 740 mln </p>
-        <p>📍 Powierzchnia: ok. 10,2 mln km² </p>
-        <p>🏳️ Kraje: ok. 44 </p>
-        <p>🌎 Położenie: półkula północna i wschodnia</p>
-        <p>🧭 Granice: Azja (Eurazja), Ocean Atlantycki, Morze Arktyczne </p>
-        <p>🏔️ Ukształtowanie terenu: góry (Alpy), niziny, wyżyny</p>
-        <p>🌦️ Klimat: umiarkowany, śródziemnomorski, chłodny na północy </p>
-        
-        <div class="ciekawostka">
-            <h1 style="text-align:center; font-size:50px; margin-bottom: 30px;">Najważniejsze miasta Europy</h1>
-            
-            <div class="miasto londyn">
-                <h2>WIELKA BRYTANIA, Londyn</h2>
-                <div style="text-align:center; margin:20px 0;">
-                    <img src="https://i.pinimg.com/736x/cd/00/64/cd006453b8d0b39e0129d753423958d2.jpg" alt="Londyn - widok miasta" style="width:70%; max-width:600px; height:auto; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
-                </div>
-                <p>⭐ Ludność: ok. 10 mln</p><br>
-                <p>⭐ Powierzchnia: ok. 1500 km²</p><br>
-                <p>⭐ Położenie: południowo-wschodnia Anglia, nad rzeką Tamizą</p><br>
-                <p>⭐ Język: angielski</p><br>
-                <p>⭐ Waluta: funt szterling (GBP)</p><br>
-                <p>⭐ Kultura: Londyn to bardzo wielokulturowe miasto...</p><br>
-                <h2>CIEKAWOSTKI:</h2><br>
-                <p>⭐ W Londynie mówi się ponad 300 językami.</p>
-            </div>
-
-            <div class="miasto"><br><br>
-                <h2>FRANCJA, PARYŻ</h2>
-                <div style="text-align:center; margin:20px 0;">
-                    <img src="https://i.pinimg.com/736x/85/02/57/8502577156ad9ca457e092c791c5117f.jpg" alt="Paryż - widok miasta" style="width:70%; max-width:600px; height:auto; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
-                </div>
-                <p>⭐ Ludność: ok. 2,1 mln</p><br>
-                <p>⭐ Atrakcje: Wieża Eiffla, Luwr.</p>
-            </div>
-        </div>
-
-        <br><br><h1 style="text-align:center; font-size:50px;">Historia</h1><br><br>
-        <p>Tekst o historii Europy...</p>
-    </div>
-</div>
-
-<!-- ==================== AZJA (Twój oryginalny kod) ==================== -->
-<div id="azja" class="sekcja">
-    <div class="karta">
-        <h2>🌏 Azja</h2>
-        <p>👥 Ludność: ok. 4,7 mld</p>
-        <p>📍 Powierzchnia: ok. 44,6 mln km²</p>
-        
-        <div class="karta ciekawostka">
-            <h1 style="text-align:center; font-size:40px; margin-bottom: 20px;">Najważniejsze miasta Azji</h1>
-            <div class="miasto">
-                <h2>JAPONIA, Tokio</h2>
-                <div style="text-align:center; margin:20px 0;">
-                    <img src="https://i.pinimg.com/1200x/d0/e2/d9/d0e2d933be0c5d00e5c2dcbcabf4ac6e.jpg" style="width:100%; max-width:500px; border-radius:15px; display:block; margin:0 auto;">
-                </div>
-                <p>⭐ Ludność: ok. 37 mln</p>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- ==================== AFRYKA (Nowy szablon do edycji) ==================== -->
 <div id="afryka" class="sekcja">
@@ -1062,26 +980,8 @@ function pokaz(idKontynentu) {
     </div>
 </div>
 
-<!-- ==================== STOPKA ==================== -->
-<footer>
-    <p>&copy; 2026 Kontynenty Świata. Projekt strony: Anika Dulian</p>
-</footer>
 
-<!-- ==================== SCRIPT JAVASCRIPT (Wymagany do klikania!) ==================== -->
-<script>
-    function pokaz(idSekcji) {
-        // Schowaj wszystkie sekcje na stronie
-        var sekcje = document.getElementsByClassName('sekcja');
-        for (var i = 0; i < sekcje.length; i++) {
-            sekcje[i].classList.remove('active');
-        }
-        // Pokaż dokładnie tę sekcję, w którą kliknięto w menu
-        document.getElementById(idSekcji).classList.add('active');
-    }
-</script>
 
-</body>
-</html>
 
 <footer>
     <p>&copy; 2026 Kontynenty Świata. Wszelkie prawa zastrzeżone.</p>
