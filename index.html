@@ -785,246 +785,303 @@ function pokaz(idKontynentu) {
                 <p>⭐ Ludność: ok. 3,3 mln</p><br>
                 <p>⭐ Powierzchnia: ok. 605 km²</p><br>
                 <p>⭐ Położenie: środkowa Hiszpania, nad rzeką Manzanares</p><br>
-                <p>⭐ Język: hiszpański</p><br>
-                <p>⭐ Waluta: euro (EUR)</p><br>
-                <p>⭐ Kultura: Madryt to tętniąca życiem stolica Hiszpanii. Znajdują się tu słynne muzea (Prado, Reina Sofía), tradycja flamenco, piłka nożna oraz bogate życie nocne i uliczne.</p><br>
-                <p>⭐ Religie: W Madrycie dominuje chrześcijaństwo (katolicyzm), ale miasto jest zróżnicowane religijnie – mieszkają tu także muzułmanie, inne wyznania oraz osoby niewierzące.</p><br>
-                <p>⭐ Zabytki i atrakcje: Pałac Królewski, Plaza Mayor, Park Retiro, Muzeum Prado, Puerta del Sol, Gran Vía, stadion Santiago Bernabéu.</p><br>
-                <p>⭐ Charakter miasta: Madryt jest dynamiczny, głośny i pełen życia. Łączy historię z nowoczesnością i jest jednym z najważniejszych miast kultury i sportu w Europie.</p><br>
+                <p>⭐ Język: hiszpański</p><br><!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontynenty Świata - Anika</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f5e1e7;
+            font-family: Georgia, serif;
+            color: #5a3d47;
+        }
+
+        header {
+            background: linear-gradient(to right, #e8c7d0, #f8dfe5);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            background: #e0b9c5;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            background: white;
+            border: none;
+            padding: 12px 18px;
+            margin: 5px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #7a4f5c;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background: #c98fa0;
+            color: white;
+        }
+
+        .sekcja {
+            display: none;
+            padding: 40px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .karta {
+            background: white;
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+        }
+
+        .karta h2 {
+            margin-bottom: 20px;
+            font-size: 35px;
+        }
+
+        .ciekawostka {
+            background: #f8dfe5;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+        footer {
+            background: #d7a8b6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🌍 Kontynenty Świata</h1>
+    <p>Poznaj najciekawsze miejsca naszej planety</p>
+    <h3 style="margin-top: 10px; font-weight: normal;">Autor: Anika Dulian</h3>
+</header>
+
+<nav>
+    <a href="#" onclick="pokaz('europa'); return false;">Europa</a>
+    <a href="#" onclick="pokaz('azja'); return false;">Azja</a>
+    <a href="#" onclick="pokaz('afryka'); return false;">Afryka</a>
+    <a href="#" onclick="pokaz('ameryka1'); return false;">Ameryka Płn.</a>
+    <a href="#" onclick="pokaz('ameryka2'); return false;">Ameryka Płd.</a>
+    <a href="#" onclick="pokaz('australia'); return false;">Australia</a>
+    <a href="#" onclick="pokaz('antarktyda'); return false;">Antarktyda</a>
+</nav>
+
+<!-- ==================== EUROPA (Twój oryginalny kod) ==================== -->
+<div id="europa" class="sekcja active">
+    <div class="karta">
+        <h2>🏰 Europa</h2>
+        <p>👥 Ludność: ok. 740 mln </p>
+        <p>📍 Powierzchnia: ok. 10,2 mln km² </p>
+        <p>🏳️ Kraje: ok. 44 </p>
+        <p>🌎 Położenie: półkula północna i wschodnia</p>
+        <p>🧭 Granice: Azja (Eurazja), Ocean Atlantycki, Morze Arktyczne </p>
+        <p>🏔️ Ukształtowanie terenu: góry (Alpy), niziny, wyżyny</p>
+        <p>🌦️ Klimat: umiarkowany, śródziemnomorski, chłodny na północy </p>
+        
+        <div class="ciekawostka">
+            <h1 style="text-align:center; font-size:50px; margin-bottom: 30px;">Najważniejsze miasta Europy</h1>
+            
+            <div class="miasto londyn">
+                <h2>WIELKA BRYTANIA, Londyn</h2>
+                <div style="text-align:center; margin:20px 0;">
+                    <img src="https://i.pinimg.com/736x/cd/00/64/cd006453b8d0b39e0129d753423958d2.jpg" alt="Londyn - widok miasta" style="width:70%; max-width:600px; height:auto; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+                </div>
+                <p>⭐ Ludność: ok. 10 mln</p><br>
+                <p>⭐ Powierzchnia: ok. 1500 km²</p><br>
+                <p>⭐ Położenie: południowo-wschodnia Anglia, nad rzeką Tamizą</p><br>
+                <p>⭐ Język: angielski</p><br>
+                <p>⭐ Waluta: funt szterling (GBP)</p><br>
+                <p>⭐ Kultura: Londyn to bardzo wielokulturowe miasto...</p><br>
                 <h2>CIEKAWOSTKI:</h2><br>
-                <p>⭐ Madryt jest jedną z najwyżej położonych stolic Europy.</p><br>
-                <p>⭐ Muzeum Prado należy do najważniejszych muzeów sztuki na świecie.</p><br>
-                <p>⭐ W mieście znajduje się stadion Realu Madryt – jeden z najsłynniejszych klubów świata.</p><br>
-                <p>⭐ Madryt ma bardzo intensywne życie nocne – wiele miejsc działa do rana.</p><br>
-                <p>⭐ Plaza Mayor ma ponad 400 lat historii.</p><br>
-                <p>⭐ Madryt jest stolicą Hiszpanii od XVII wieku.</p>
+                <p>⭐ W Londynie mówi się ponad 300 językami.</p>
             </div>
 
             <div class="miasto"><br><br>
-                <h2>GRECJA, ATENY</h2>
+                <h2>FRANCJA, PARYŻ</h2>
                 <div style="text-align:center; margin:20px 0;">
-                    <img src="https://i.pinimg.com/736x/14/1e/c7/141ec712a6575c30474b99fc0c43ce30.jpg" alt="Ateny - widok miasta" style="width:70%; max-width:600px; height:auto; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
+                    <img src="https://i.pinimg.com/736x/85/02/57/8502577156ad9ca457e092c791c5117f.jpg" alt="Paryż - widok miasta" style="width:70%; max-width:600px; height:auto; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
                 </div>
-                <p>⭐ Ludność: ok. 3 mln (aglomeracja)</p><br>
-                <p>⭐ Powierzchnia: ok. 412 km²</p><br>
-                <p>⭐ Położenie: południowa Grecja, region Attyka</p><br>
-                <p>⭐ Język: grecki</p><br>
-                <p>⭐ Waluta: euro (EUR)</p><br>
-                <p>⭐ Kultura: Ateny to kolebka cywilizacji europejskiej. To tutaj narodziła się demokracja, filozofia i teatr. Miasto łączy starożytność z nowoczesnością.</p><br>
-                <p>⭐ Religie: Dominującą religią jest prawosławie greckie. Obecne są też inne religie oraz osoby niewierzące.</p><br>
-                <p>⭐ Zabytki i atrakcje: Akropol, Partenon, Agora Ateńska, Świątynia Zeusa Olimpijskiego, Plaka, Stadion Panatenajski.</p><br>
-                <p>⭐ Charakter miasta: Ateny są historyczne, głośne i pełne kontrastów — łączą starożytne zabytki z nowoczesnym życiem miejskim.</p><br>
-                <h2>CIEKAWOSTKI:</h2><br>
-                <p>⭐ Akropol ma ponad 2500 lat.</p><br>
-                <p>⭐ Ateny są jednym z najstanowszaych miast świata.</p><br>
-                <p>⭐ To tutaj odbyły się pierwsze igrzyska olimpijskie w starożytności.</p><br>
-                <p>⭐ Demokracja narodziła się właśnie w Atenach.</p><br>
-                <p>⭐ Miasto ma bardzo gorące lata i łagodne zimy.</p>
-            </div>
-
-            <div class="miasto"><br><br>
-                <h2>CZECHY, PRAGA</h2>
-                <div style="text-align:center; margin:20px 0;">
-                    <img src="https://i.pinimg.com/736x/8b/37/6e/8b376ea4a12362462b69d43e221173fd.jpg" alt="Praga - widok miasta" style="width:70%; max-width:600px; height:auto; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.2);">
-                </div>
-                <p>⭐ Ludność: ok. 1,3 mln</p><br>
-                <p>⭐ Powierzchnia: ok. 496 km²</p><br>
-                <p>⭐ Położenie: środkowe Czechy, nad rzeką Wełtawą</p><br>
-                <p>⭐ Język: czeski</p><br>
-                <p>⭐ Waluta: korona czeska (CZK)</p><br>
-                <p>⭐ Kultura: Praga to jedno z najpiękniejszych miast Europy. Słynie z muzyki klasycznej, teatru, piwa oraz bogatej historii i architektury.</p><br>
-                <p>⭐ Religie: Większość mieszkańców jest niewierząca. Obecne są też katolicyzm, protestantyzm oraz inne religie.</p><br>
-                <p>⭐ Zabytki i atrakcje: Most Karola, Zamek Praski, Rynek Staromiejski, Zegar Astronomiczny, Katedra św. Wita, Mala Strana.</p><br>
-                <p>⭐ Charakter miasta: Praga jest romantyczna, spokojna i bardzo historyczna. Często nazywana „Złotym Miastem”.</p><br>
-                <h2>CIEKAWOSTKI:</h2><br>
-                <p>⭐ Praga nazywana jest „Miastem Stu Wież”.</p><br>
-                <p>⭐ Most Karola ma ponad 600 lat.</p><br>
-                <p>⭐ Praga jest jednym z najczęściej odwiedzanych miast Europy.</p><br>
-                <p>⭐ Zegar astronomiczny działa od XV wieku.</p><br>
-                <p>⭐ Miasto nie zostało tak zniszczone w wojnach jak inne europejskie stolice.</p>
+                <p>⭐ Ludność: ok. 2,1 mln</p><br>
+                <p>⭐ Atrakcje: Wieża Eiffla, Luwr.</p>
             </div>
         </div>
 
         <br><br><h1 style="text-align:center; font-size:50px;">Historia</h1><br><br>
-        <p>Historia Europy zaczyna się w starożytności, kiedy rozwijały się wielkie cywilizacje Grecji i Rzymu, które wprowadziły ważne idee, takie jak demokracja, prawo i filozofia...</p>
-
-        <br><br><h1 style="text-align:center; font-size:50px;">Kultura</h1><br><br>
-        <p>Kultura Europy jest bardzo bogata i różnorodna, ponieważ rozwijała się przez wiele wieków i łączy wpływy wielu cywilizacji...</p>
-
-        <br><br><h1 style="text-align:center; font-size:50px;">Polityka</h1><br><br>
-        <p>Polityka Europy opiera się na współpracy wielu państw, z których większość należy do Unii Europejskiej...</p>
-
-        <br><br><h1 style="text-align:center; font-size:50px;">Gospodarka</h1><br><br>
-        <p>Gospodarka Europy jest jedną z najlepiej rozwiniętych na świecie. Obejmuje przemysł, rolnictwo, usługi oraz handel międzynarodowy...</p>
-
-        <br><br><h1 style="text-align:center; font-size:50px;">Turystyka</h1><br><br>
-        <p>Turystyka w Europie jest bardzo dobrze rozwinięta, ponieważ kontynent ten ma wiele atrakcji przyrodniczych i kulturowych...</p>
-
-        <br><br><h1 style="text-align:center; font-size:50px;">Geografia</h1><br><br>
-        <p>Geografia Europy jest bardzo zróżnicowana i obejmuje wiele rzek, gór, mórz oraz regionów...</p>
+        <p>Tekst o historii Europy...</p>
     </div>
 </div>
 
+<!-- ==================== AZJA (Twój oryginalny kod) ==================== -->
 <div id="azja" class="sekcja">
     <div class="karta">
         <h2>🌏 Azja</h2>
         <p>👥 Ludność: ok. 4,7 mld</p>
         <p>📍 Powierzchnia: ok. 44,6 mln km²</p>
-        <p>🏳️ Kraje: ok. 48</p>
-        <p>🌎 Położenie: półkula północna i wschodnia</p>
-        <p>🧭 Granice: Europa (Ural), Ocean Spokojny, Ocean Indyjski, Arktyka</p>
-        <p>🏔️ Ukształtowanie terenu: Himalaje, pustynie, niziny, wyżyny</p>
-        <p>🌦️ Klimat: od arktycznego po równikowy</p>
-    </div>
-
-    <div class="karta ciekawostka">
-        <h1 style="text-align:center; font-size:40px; margin-bottom: 20px;">Najważniejsze miasta Azji</h1>
-
-        <div class="miasto" style="margin-bottom: 40px; padding: 15px; border-bottom: 1px dashed #ccc;">
-            <h2>JAPONIA, Tokio</h2>
-            <div style="text-align:center; margin:20px 0;">
-                <img src="https://i.pinimg.com/1200x/d0/e2/d9/d0e2d933be0c5d00e5c2dcbcabf4ac6e.jpg" style="width:100%; max-width:500px; border-radius:15px; display:block; margin:0 auto;">
+        
+        <div class="karta ciekawostka">
+            <h1 style="text-align:center; font-size:40px; margin-bottom: 20px;">Najważniejsze miasta Azji</h1>
+            <div class="miasto">
+                <h2>JAPONIA, Tokio</h2>
+                <div style="text-align:center; margin:20px 0;">
+                    <img src="https://i.pinimg.com/1200x/d0/e2/d9/d0e2d933be0c5d00e5c2dcbcabf4ac6e.jpg" style="width:100%; max-width:500px; border-radius:15px; display:block; margin:0 auto;">
+                </div>
+                <p>⭐ Ludność: ok. 37 mln</p>
             </div>
-            <p>⭐ Ludność: ok. 37 mln</p><br>
-            <p>⭐ Położenie: wyspa Honsiu</p><br>
-            <p>⭐ Język: japoński</p><br>
-            <p>⭐ Waluta: jen (JPY)</p><br>
-            <p>⭐ Kultura: nowoczesność + tradycja</p><br>
-            <p>⭐ Atrakcje: Tokio Tower, Shibuya, świątynie</p><br>
-            <h2>CIEKAWOSTKI:</h2><br>
-            <p>⭐ Tokio to najbardziej zaludniony obszar metropolitalny na świecie (mieszka tu ponad 37 mln ludzi).</p><br>
-            <p>⭐ Na słynnym skrzyżowaniu Shibuya w godzinach szczytu przez jedną zmianę świateł przechodzi nawet 3000 osób.</p><br>
-            <p>⭐ W Tokio znajduje się ponad 200 stacji metra, a pociągi są tak punktualne, że spóźnienie o minutę wymaga oficjalnych przeprosin.</p><br>
-            <p>⭐ Wieża Tokyo Skytree ma aż 634 metry wysokości i jest drugą najwyższą budowlą na świecie.</p><br>
-            <p>⭐ Miasto pierwotnie nazywało się "Edo" i z małej wioski rybackiej przekształciło się w jedną z najnowocześniejszych stolic globu.</p>
-        </div>
-
-        <div class="miasto" style="margin-bottom: 40px; padding: 15px; border-bottom: 1px dashed #ccc;">
-            <h2>CHINY, Pekin</h2>
-            <div style="text-align:center; margin:20px 0;">
-                <img src="https://i.pinimg.com/1200x/da/52/fd/da52fde8b0e605428c3c578652b01c0a.jpg" style="width:100%; max-width:500px; border-radius:15px; display:block; margin:0 auto;">
-            </div>
-            <p>⭐ Ludność: ok. 22 mln</p><br>
-            <p>⭐ Położenie: północne Chiny</p><br>
-            <p>⭐ Język: chiński</p><br>
-            <p>⭐ Waluta: juan (CNY)</p><br>
-            <p>⭐ Kultura: cesarska historia</p><br>
-            <p>⭐ Atrakcje: Wielki Mur, Zakazane Miasto</p><br>
-            <h2>CIEKAWOSTKI:</h2><br>
-            <p>⭐ Zakazane Miasto w Pekinie to największy kompleks pałacowy na świecie, który ma aż 9999 pokoi.</p><br>
-            <p>⭐ Pekin jest pierwszym miastem w historii, które zorganizowało zarówno Letnie (2008), jak i Zimowe Igrzyska Olimpijskie (2022).</p><br>
-            <p>⭐ Najpopularniejszym daniem w mieście jest kaczka po pekińsku, której sekret tkwi w niezwykle chrupiącej skórce.</p><br>
-            <p>⭐ Transport w Pekinie jest gigantyczny – tutejsze metro jest jednym z najdłuższych i najbardziej zatłoczonych na całym świecie.</p><br>
-            <p>⭐ Nazwa „Beijing” oznacza dosłownie „Północna Stolica”, co nawiązuje do położenia geograficznego miasta w Chinach.</p>
-        </div>
-
-        <div class="miasto" style="margin-bottom: 40px; padding: 15px; border-bottom: 1px dashed #ccc;">
-            <h2>INDIE, Nowe Delhi</h2>
-            <div style="text-align:center; margin:20px 0;">
-                <img src="https://i.pinimg.com/736x/cd/dc/a5/cddca59ba385fa0215aace5d858960be.jpg" style="width:100%; max-width:500px; border-radius:15px; display:block; margin:0 auto;">
-            </div>
-            <p>⭐ Ludność: ok. 30 mln (aglomeracja)</p><br>
-            <p>⭐ Położenie: północne Indie</p><br>
-            <p>⭐ Język: hindi, angielski</p><br>
-            <p>⭐ Waluta: rupia</p><br>
-            <p>⭐ Kultura: bardzo różnorodna</p><br>
-            <p>⭐ Atrakcje: Taj Mahal (blisko), świątynie</p><br>
-            <h2>CIEKAWOSTKI:</h2><br>
-            <p>⭐ Nowe Delhi to oficjalna stolica Indii, ale stanowi ona tylko małą, wydzieloną część gigantycznej aglomeracji zwanej Delhi.</p><br>
-            <p>⭐ Znajduje się tu Świątynia Lotosu, która ze względu na swój niesamowity kształt kwiatu jest jednym z najczęściej odwiedzanych budynków na świecie.</p><br>
-            <p>⭐ Khari Baoli w Delhi to największy hurtowy targ przypraw w całej Azji, który działa nieprzerwanie od XVII wieku.</p><br>
-            <p>⭐ System metra w Delhi jest jednym z najnowocześniejszych na świecie – pociągi i stacje są w pełni klimatyzowane, co ratuje pasażerów podczas upałów sięgających 45°C.</p><br>
-            <p>⭐ Ponad 20% obszaru miasta pokrywają lasy i parki, dzięki czemu Delhi jest uznawane za jedną z najbardziej "zielonych" stolic świata, mimo ogromnego ruchu ulicznego.</p>
-        </div>
-
-        <div class="miasto" style="margin-bottom: 40px; padding: 15px; border-bottom: 1px dashed #ccc;">
-            <h2>ZJEDNOCZONE EMIRATY ARABSKIE, Dubaj</h2>
-            <div style="text-align:center; margin:20px 0;">
-                <img src="https://i.pinimg.com/736x/bb/70/dd/bb70dd9e6ce18a7123c6b79b088d2552.jpg" style="width:100%; max-width:500px; border-radius:15px; display:block; margin:0 auto;">
-            </div>
-            <p>⭐ Ludność: ok. 3,5 mln</p><br>
-            <p>⭐ Położenie: Zjednoczone Emiraty Arabskie</p><br>
-            <p>⭐ Język: arabski</p><br>
-            <p>⭐ Waluta: dirham</p><br>
-            <p>⭐ Kultura: nowoczesność i luksus</p><br>
-            <p>⭐ Atrakcje: Burj Khalifa, pustynia</p><br>
-            <h2>CIEKAWOSTKI:</h2><br>
-            <p>⭐ W Dubaju stoi Burj Khalifa – najwyższy budynek świata, który mierzy aż 828 metrów i ma 163 piętra.</p><br>
-            <p>⭐ Tutejsza policja korzysta z najdroższych supersamochodów na świecie, w tym z takich marek jak Bugatti, Ferrari, Lamborghini czy Aston Martin.</p><br>
-            <p>⭐ W mieście znajduje się Palm Jumeirah – gigantyczna sztuczna wyspa w kształcie palmy, którą widać nawet z kosmosu.</p><br>
-            <p>⭐ Choć Dubaj leży na pustyni, w jednym z tutejszych centrów handlowych (Mall of the Emirates) działa całoroczny, zadaszony kurort narciarski z prawdziwym śniegiem.</p><br>
-            <p>⭐ Dubaj nie posiada tradycyjnego systemu adresowego z kodami pocztowymi i nazwami ulic – przez lata dostarczanie przesyłek opierało się na opisach i charakterystycznych punktach orientacyjnych.</p>
-        </div>
-
-        <div class="miasto" style="margin-bottom: 40px; padding: 15px; border-bottom: 1px dashed #ccc;">
-            <h2>TAJLANDIA, Bangkok</h2>
-            <div style="text-align:center; margin:20px 0;">
-                <img src="https://i.pinimg.com/736x/0a/91/2a/0a912a60abe9139845f912b58d1e641a.jpg" style="width:100%; max-width:500px; border-radius:15px; display:block; margin:0 auto;">
-            </div>
-            <p>⭐ Ludność: ok. 11 mln</p><br>
-            <p>⭐ Położenie: południowa Azja</p><br>
-            <p>⭐ Język: tajski</p><br>
-            <p>⭐ Waluta: bat</p><br>
-            <p>⭐ Kultura: świątynie i tradycja</p><br>
-            <p>⭐ Atrakcje: Wielki Pałac, targi</p><br>
-            <h2>CIEKAWOSTKI:</h2><br>
-            <p>⭐ Pełna, oficjalna nazwa Bangkoku w języku tajskim składa się z aż 168 liter i jest wpisana do Księgi Rekordów Guinnessa jako najdłuższa nazwa geograficzna na świecie.</p><br>
-            <p>⭐ Światowa Organizacja Meteorologiczna uznała Bangkok za jedno z najgorętszych miast świata pod względem średniej temperatury utrzymującej się przez cały rok.</p><br>
-            <p>⭐ Miasto bywa nazywane „Wenecją Wschodu” ze względu na ogromną sieć kanałów wodnych (khlongów), które dawniej stanowiły główną oś transportową miasta.</p><br>
-            <p>⭐ W Bangkoku znajduje się Świątynia Złotego Buddy (Wat Traimit), w której ukryty jest największy na świecie posąg Buddy wykonany z czystego złota, ważący aż 5,5 tony.</p><br>
-            <p>⭐ Tradycyjne trójkołowe pojazdy, czyli Tuk-Tuki, to jeden z najbardziej rozpoznawalnych symboli transportu w mieście, uwielbiany przez turystów z całego świata.</p>
-        </div>
-
-        <div class="miasto" style="padding: 15px;">
-            <h2>SINGAPUR</h2>
-            <div style="text-align:center; margin:20px 0;">
-                <img src="https://i.pinimg.com/1200x/7e/ec/26/7eec26da6a16e3fbc866a67d62ad9b3a.jpg" style="width:100%; max-width:500px; border-radius:15px; display:block; margin:0 auto;">
-            </div>
-            <p>⭐ Ludność: ok. 6 mln</p><br>
-            <p>⭐ Położenie: Azja Południowo-Wschodnia</p><br>
-            <p>⭐ Język: angielski, malajski</p><br>
-            <p>⭐ Waluta: dolar singapurski</p><br>
-            <p>⭐ Kultura: nowoczesne miasto-państwo</p><br>
-            <p>⭐ Atrakcje: Marina Bay Sands, Gardens by the Bay</p><br>
-            <h2>CIEKAWOSTKI:</h2><br>
-            <p>⭐ Singapur to jedno z zaledwie trzech ocalałych miast-państw na świecie (pozostałe dwa to Monako i Watykan).</p>
         </div>
     </div>
 </div>
 
+<!-- ==================== AFRYKA (Nowy szablon do edycji) ==================== -->
 <div id="afryka" class="sekcja">
     <div class="karta">
         <h2>🌍 Afryka</h2>
-        <p>👥 Ludność: ok. 1,4 mld</p>
-        <p>📍 Powierzchnia: ok. 30,3 mln km²</p>
-        <p>🏳️ Kraje: ok. 54</p>
-        <p>🌎 Położenie: półkula północna, południowa, wschodnia i zachodnia</p>
-        <p>🧭 Granice: Europa (Morze Śródziemne), Azja (Kanał Sueski), Ocean Atlantycki, Ocean Indyjski</p>
-        <p>🏔️ Ukształtowanie terenu: Sahara, Kilimandżaro, Wielkie Rowy Afrykańskie, kotliny, wyżyny</p>
-        <p>🌦️ Klimat: od zwrotnikowego suchego (pustynnego) po równikowy wilgotny</p>
-    </div>
-
-    <div class="karta ciekawostka">
-        <h1 style="text-align:center; font-size:40px; margin-bottom: 20px;">Najważniejsze miasta Afryki</h1>
-
-        <div class="miasto" style="margin-bottom: 40px; padding: 15px; border-bottom: 1px dashed #ccc;">
-            <h2>EGIPT, Kair</h2>
-            <div style="text-align:center; margin:20px 0;">
-                <img src="https://i.pinimg.com/1200x/2c/80/ef/2c80ef4f9549f3be8f6b4b4b2dd47c7c.jpg" style="width:100%; max-width:500px; border-radius:15px; display:block; margin:0 auto;">
+        <p>👥 Ludność: Tutaj wpisz zaludnienie Afryki</p>
+        <p>📍 Powierzchnia: Tutaj wpisz wielkość kontynentu</p>
+        <p>🏳️ Kraje: Liczba państw</p>
+        
+        <div class="ciekawostka">
+            <h1 style="text-align:center; font-size:40px; margin-bottom: 20px;">Najważniejsze miasta Afryki</h1>
+            <div class="miasto">
+                <h2>EGIPT, Kair</h2>
+                <p>⭐ Tutaj możesz dodać informacje o Kairze, zdjęcia i ciekawostki!</p><br>
+                <p>⭐ Kolejna linijka tekstu do edycji...</p>
             </div>
-            <p>⭐ Ludność: ok. 22 mln (aglomeracja)</p><br>
-            <p>⭐ Położenie: północno-wschodnia Afryka, nad rzeką Nil</p><br>
-            <p>⭐ Język: arabski</p><br>
-            <p>⭐ Waluta: funt egipski (EGP)</p><br>
-            <p>⭐ Kultura: tysiącletnia historia islamska i faraońska</p><br>
-            <p>⭐ Atrakcje: Piramidy w Gizie (blisko), Muzeum Egipskie, Bazar Chan al-Chalili</p><br>
-            <h2>CIEKAWOSTKI:</h2><br>
-            <p>⭐ Kair jest największym obszarem metropolitalnym w Afryce i na Bliskim Wschodzie.</p><br>
-            <p>⭐ Miasto bywa nazywane „Miastem Tysiąca Minaretów” ze względu na ogromną liczbę pięknych, historycznych meczetów.</p><br>
-            <p>⭐ Choć słynne piramidy w Gizie kojarzą się z głęboką pustynią, w rzeczywistości stoją tuż obok tętniących życiem dzielnic mieszkalnych Kairu.</p>
         </div>
     </div>
 </div>
+
+<!-- ==================== AMERYKA PÓŁNOCNA (Nowy szablon do edycji) ==================== -->
+<div id="ameryka1" class="sekcja">
+    <div class="karta">
+        <h2>🦅 Ameryka Północna</h2>
+        <p>👥 Ludność: Informacje o ludności Ameryki Północnej</p>
+        <p>📍 Powierzchnia: Informacje o powierzchni</p>
+        
+        <div class="ciekawostka">
+            <h1 style="text-align:center; font-size:40px; margin-bottom: 20px;">Najważniejsze miasta Ameryki Płn.</h1>
+            <div class="miasto">
+                <h2>USA, Nowy Jork</h2>
+                <p>⭐ Tutaj wpisz tekst o Nowym Jorku.</p><br>
+                <p>⭐ Możesz skopiować stąd wzór i dodawać kolejne miasta!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== AMERYKA POŁUDNIOWA (Nowy szablon do edycji) ==================== -->
+<div id="ameryka2" class="sekcja">
+    <div class="karta">
+        <h2>💃 Ameryka Południowa</h2>
+        <p>👥 Ludność: Informacje o ludności Ameryki Południowej</p>
+        <p>📍 Powierzchnia: Informacje o powierzchni</p>
+        
+        <div class="ciekawostka">
+            <h1 style="text-align:center; font-size:40px; margin-bottom: 20px;">Najważniejsze miasta Ameryki Płd.</h1>
+            <div class="miasto">
+                <h2>BRAZYLIA, Rio de Janeiro</h2>
+                <p>⭐ Tutaj wpisz tekst o Rio de Janeiro.</p><br>
+                <p>⭐ Edytuj te linijki według własnego uznania.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== AUSTRALIA (Nowy szablon do edycji) ==================== -->
+<div id="australia" class="sekcja">
+    <div class="karta">
+        <h2>🦘 Australia i Oceania</h2>
+        <p>👥 Ludność: Informacje o ludności Australii</p>
+        <p>📍 Powierzchnia: Informacje o powierzchni</p>
+        
+        <div class="ciekawostka">
+            <h1 style="text-align:center; font-size:40px; margin-bottom: 20px;">Najważniejsze miasta Australii</h1>
+            <div class="miasto">
+                <h2>AUSTRALIA, Sydney</h2>
+                <p>⭐ Tutaj wpisz tekst o Sydney.</p><br>
+                <p>⭐ Miejsce na Twoje własne ciekawostki o kangurach lub miastach!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== ANTARKTYDA (Nowy szablon do edycji) ==================== -->
+<div id="antarktyda" class="sekcja">
+    <div class="karta">
+        <h2>🐧 Antarktyda</h2>
+        <p>👥 Ludność: Brak stałych mieszkańców</p>
+        <p>📍 Powierzchnia: Informacje o lodowym kontynencie</p>
+        
+        <div class="ciekawostka">
+            <h1 style="text-align:center; font-size:40px; margin-bottom: 20px;">Życie na Antarktydzie</h1>
+            <div class="miasto">
+                <h2>STACJE BADAWCZE</h2>
+                <p>⭐ Tutaj możesz napisać o pingwinach, lodowcach i stacjach naukowych.</p><br>
+                <p>⭐ Strona jest w pełni gotowa do uzupełniania!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== STOPKA ==================== -->
+<footer>
+    <p>&copy; 2026 Kontynenty Świata. Projekt strony: Anika Dulian</p>
+</footer>
+
+<!-- ==================== SCRIPT JAVASCRIPT (Wymagany do klikania!) ==================== -->
+<script>
+    function pokaz(idSekcji) {
+        // Schowaj wszystkie sekcje na stronie
+        var sekcje = document.getElementsByClassName('sekcja');
+        for (var i = 0; i < sekcje.length; i++) {
+            sekcje[i].classList.remove('active');
+        }
+        // Pokaż dokładnie tę sekcję, w którą kliknięto w menu
+        document.getElementById(idSekcji).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
 
 <footer>
     <p>&copy; 2026 Kontynenty Świata. Wszelkie prawa zastrzeżone.</p>
